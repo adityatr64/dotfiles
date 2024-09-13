@@ -261,7 +261,7 @@
 #: so if you want to override it, place your value after the lines
 #: where the theme file is included.
 
-cursor_shape beam
+# cursor_shape block
 
 #: The cursor shape can be one of block, beam, underline. Note that
 #: when reloading the config this will be changed only if the cursor
@@ -397,8 +397,8 @@ cursor_shape beam
 #: robustly with the ever-changing sea of bugs that is Cocoa is too
 #: much effort.
 
-url_color #0087bd
-url_style curly
+# url_color #0087bd
+# url_style curly
 
 #: The color and style for highlighting URLs on mouse-over. url_style
 #: can be one of: none, straight, double, curly, dotted, dashed.
@@ -416,7 +416,7 @@ url_style curly
 #: The set of URL prefixes to look for when detecting a URL under the
 #: mouse cursor.
 
-detect_urls yes
+# detect_urls yes
 
 #: Detect URLs under the mouse. Detected URLs are highlighted with an
 #: underline and the mouse cursor becomes a hand over them. Even if
@@ -811,9 +811,9 @@ detect_urls yes
 
 #: Window layout {{{
 
-remember_window_size  No
-initial_window_width  1100
-initial_window_height 650
+# remember_window_size  yes
+# initial_window_width  640
+# initial_window_height 400
 
 #: If enabled, the OS Window size will be remembered so that new
 #: instances of kitty will have the same size as the previous
@@ -2590,9 +2590,3 @@ initial_window_height 650
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Tokyo Night
-include current-theme.conf
-# END_KITTY_THEME
